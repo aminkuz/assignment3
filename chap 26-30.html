@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <!-- question no 1 -->
+    <script>
+        document.write("<br>")
+        document.write("<h1>Question #1 <br></h1>")
+
+        var floor = Math.floor(3.45214);
+        var round = Math.round(3.45214);
+        var ceil = Math.ceil(3.45214)
+        document.write(floor, round, ceil);
+    </script>
+
+    <!-- question no 2 -->
+    <script>
+        document.write("<br>")
+        document.write("<h1>Question #2 <br></h1>")
+
+        var floor = Math.floor(-2.673);
+        var round = Math.round(-2.673);
+        var ceil = Math.ceil(-2.673)
+        document.write(floor, round, ceil);
+
+
+    </script>
+
+    <!-- question no 03 -->
+    <script>
+        document.write("<br>")
+        document.write("<h1>Question #3 <br></h1>")
+
+        var number1 = -4;
+        var number2 = 5;
+
+
+        var absoluteValue1 = Math.abs(number1);
+        var absoluteValue2 = Math.abs(number2);
+        document.write("<h2>Absolute Values:</h2>");
+        document.write("<p>Absolute value of " + number1 + " is " + absoluteValue1 + "</p>");
+        document.write("<p>Absolute value of " + number2 + " is " + absoluteValue2 + "</p>");
+    </script>
+
+    <!-- question no 04 -->
+    <script>
+        document.write("<br>")
+        document.write("<h1>Question #4 <br></h1>")
+
+        function rollDice() {
+            var diceValue = Math.floor(Math.random() * 6) + 1;
+            return diceValue;
+        }
+        var result = rollDice();
+        document.write("<p>The value of the dice is: " + result + "</p>");
+    </script>
+
+    <!-- question no 05 -->
+    <script>
+        document.write("<br>")
+        document.write("<h1>Question #5 <br></h1>")
+
+        function tossCoin() {
+            var randomValue = Math.random();
+            var coinResult = randomValue < 0.5 ? "Heads" : "Tails";
+            return coinResult;
+        }
+        var result = tossCoin();
+        document.write("<h2>Coin Toss Result:</h2>");
+        document.write("<p>The result of the coin toss is: " + result + "</p>");
+    </script>
+
+    <!-- question no 6 -->
+    <script>
+        document.write("<br>")
+        document.write("<h1>Question #6 <br></h1>")
+
+        function getRandomNumber() {
+            var randomNumber = Math.floor(Math.random() * 100) + 1;
+            return randomNumber;
+        }
+        var number = getRandomNumber();
+        document.write("<h2>Random Number Between 1 and 100:</h2>");
+        document.write("<p>The random number is: " + number + "</p>");
+
+    </script>
+
+    <!-- question no 07 -->
+    <script>
+        document.write("<br>")
+        document.write("<h1>Question #7 <br></h1>")
+
+        var userInput = prompt("Please enter your weight (e.g., 50, 50kgs, 50.2kgs, 50.2kilograms):");
+        var weightMatch = userInput.match(/[\d\.]+/);
+        document.write("Your weight is: " + (weightMatch ? weightMatch[0] + " kg" : "Invalid input. Please enter a valid weight."));
+    </script>
+
+    <!-- question no 8 -->
+
+    <script>
+        document.write("<br>")
+        document.write("<h1>Question #8 <br></h1>")
+
+        function getSecretNumber() {
+            var secretNumber = Math.floor(Math.random() * 10) + 1;
+            return secretNumber;
+        }
+        var secretNumber = getSecretNumber();
+        var userInput = prompt("Guess a number between 1 and 10:");
+        var userGuess = parseInt(userInput);
+        if (userGuess === secretNumber) {
+            document.write("<h2>Congratulations!</h2>");
+            document.write("<p>You guessed the correct number: " + secretNumber + "</p>");
+        } else {
+            document.write("<h2>Sorry!</h2>");
+            document.write("<p>The correct number was: " + secretNumber + "</p>");
+        }
+    </script>
+</body>
+
+</html>
